@@ -1,4 +1,4 @@
-// Test Programm um das Spiel und die Funktionen zu testen.//
+// Test Programm um das Spiel und die Einzelnen Funktionen zu testen.//
 fun main() {
     testCharacterActions()
     testBag()

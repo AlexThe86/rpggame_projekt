@@ -20,6 +20,7 @@ open class Item(open val name: String, open val healAmount: Int, open val damage
                     for (action in hero.actions) {
                         //wenn aktion vorhanden, dann neuen wert errechnen.//
                         if (action is AttackAction) {
+                            //füge den schaden zu//
                             olddmg += action.damage
                         }
                     }

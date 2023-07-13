@@ -6,7 +6,7 @@ class Unterboss(name: String) : Action(name) {
     override fun apply(act: Charakter, target: Enemy) {
         //hier wird der subboss erstellt mit einer Aktion und schaden 10
         val subBoss = Enemy("Unterboss", 50, listOf(AttackAction("Angriff", 10)))
-        // if bediengung ob der unterboss beschworen wurde oder nicht./
+        // if bediengung ob der unterboss beschworen wurde oder nicht. sitzt standart auf false./
         if (unterboss) {
             println("Der Unterboss wurde bereits beschworen.")
             return
