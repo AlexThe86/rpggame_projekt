@@ -124,7 +124,7 @@ class Game {
         }
         //itteriert durch die überlebenden helden , und gibt einen hinweis aus zur lp.//
         for (hero in aliveHeroes) {
-            if (hero.hp > 50) {
+            if (hero.hp > 75) {
                 println("\u001B[33mHinweis: ${hero.name} verfügt über 75 HP. Du kannst Items nutzen.\u001B[0m")
             }
         }
