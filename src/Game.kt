@@ -29,6 +29,7 @@ class Game {
         val item2 = Item("Stärketrank", 10,0)
         val item3 = Item("Powertrank", 30,0)
         val item4 = Item("Vitamine",0,30)
+        //gibt den listeninhalt zurück//
         return listOf(item1, item2, item3,item4)
     }
     //mit aufruf der Methode, startet der spiel ablauf.//
@@ -54,7 +55,7 @@ class Game {
         val maxRounds = 3
         //zähler variable fängt bei 1 an und  zählt die runden.//
         var roundCounter = 1
-        //gibt true aus solange die bedienungen erfüllt sind.//
+        //gibt true aus solange die bedienungen erfüllt sind.gibt den boolean wert zurück.//
         while (roundCounter <= maxRounds && heroes.all { it.hp > 0 } && enemy.hp > 0)
         {
             println("\u001B[33mRunde $roundCounter startet.....\u001B[0m")
