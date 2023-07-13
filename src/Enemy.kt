@@ -21,6 +21,7 @@ class Enemy(name: String, healthPoints: Int, val actions: List<Action>) : Charak
     }
     //berechnet den schaden, der verursacht wird. und gibt einen Int wert zw 10-35 zurück.//
     fun calculateDmg(): Int {
+        //gibt einen wert zwischen 10 und 35 zurück.//
         return (10..35).random()
     }
     fun attackHeroes(heroes: List<Hero>) {

@@ -8,6 +8,7 @@ class CurseAction(name: String, private val cursedmg: Double) : Action(name) {
             return
         }
         println("${act.name} wendet einen Fluch auf ${target.name} an.")
+        //wendet den fluch an.//
         target.applyCurse(cursedmg)
     }
 }

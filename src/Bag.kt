@@ -10,6 +10,7 @@ class Bag {
     }
     //nutzt das item, wenn item vorhanden sind//
     fun useItem(target: Charakter) {
+        //prüft ob items leer sind.//
         if (items.isEmpty()) {
             println("Keine Items im Beutel vorhanden.")
             return
@@ -20,6 +21,7 @@ class Bag {
         }
         println("0. Keine Auswahl")
         println("Bitte gib die Aktion an:")
+        //beginn try block.//
         try {
         val input = readln().toIntOrNull()
         //prüft für den ausgewählten gegenstand ob der counter grösser oder maximal als 4 ist//
@@ -42,5 +44,6 @@ class Bag {
         } catch (e: NumberFormatException) {
             println("Ungültige Eingabe. Bitte eine Zahl eingeben.")
         }
+        //ende tryblock
     }
 }
